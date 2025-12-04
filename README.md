@@ -4,20 +4,19 @@ on tools to assist it.
 
 # Plan
  - Re-implement using OpenAI assistants https://platform.openai.com/docs/assistants/how-it-works/creating-assistants
+ - [ ] Convert LightingTool to MCP server
+ - [ ] Add weather as another available tool
  - [ ] Replace TTS with Deepgram voice, does it sound better?
  - [ ] Improve dismissing
  - [ ] Improve latency
  - [ ] Try GPT-4?
 
-# Design
-Similar library: https://github.com/minimaxir/simpleaichat/tree/main
-- [ ] Better SST and TTS tools: https://github.com/AlexandreSajus/JARVIS
 
 ## Multiple Prompts
 First prompt just decides on tool, tried to handle both tool selection and response at once, but ChatGPT was too dumb.
 
 ## Tool Prompts
-Tools need their own separate history, as otherwise  ChatGPT tends to refer to old messages rather than the 
+Tools need their own separate history, as otherwise ChatGPT tends to refer to old messages rather than the 
 current request.
 
 ## Speech to Text
