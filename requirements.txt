@@ -2,3 +2,4 @@ python-dotenv
 openai
 flux_led
 azure-cognitiveservices-speech
+mcp
